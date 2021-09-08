@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyApi", "DummyApi\DummyApi.csproj", "{707E9B35-D910-400D-891E-313160AD1CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyServic", "DummyServic\DummyServic.csproj", "{187B37D0-7C5E-409F-A45E-C0C7133E690E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{707E9B35-D910-400D-891E-313160AD1CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{707E9B35-D910-400D-891E-313160AD1CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{707E9B35-D910-400D-891E-313160AD1CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{707E9B35-D910-400D-891E-313160AD1CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{187B37D0-7C5E-409F-A45E-C0C7133E690E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187B37D0-7C5E-409F-A45E-C0C7133E690E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187B37D0-7C5E-409F-A45E-C0C7133E690E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187B37D0-7C5E-409F-A45E-C0C7133E690E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4358F22E-EB5B-42E7-9EF0-37A56E91CD3A}
+	EndGlobalSection
+EndGlobal
