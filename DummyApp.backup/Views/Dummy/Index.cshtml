@@ -1,0 +1,15 @@
+﻿@model DummyApp.ViewModels.EmployeesViewModel
+@{
+    ViewBag.Title = "Employees";
+}
+
+
+    @foreach (var employee in Model.employees)
+    {
+        <div class="card">
+            <div class="card-body" style="font-size:medium;">@Html.ActionLink(employee.name, $"GetEmployee/{employee.id}", "Dummy", new { id = employee.id})</div>
+        </div>
+    }
+
+
+

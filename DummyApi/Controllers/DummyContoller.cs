@@ -1,11 +1,12 @@
 ﻿using DummyServic;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using System.Web.Http;
+
 
 namespace DummyApi.Controllers
 {
     [Route("api/Dummy")]
-    public class DummyController : ApiController
+    public class DummyController : Microsoft.AspNetCore.Mvc.ControllerBase
     {
         private readonly IDummyServic _dummyServic;
         public DummyController(IDummyServic dummyServic)
@@ -14,7 +15,12 @@ namespace DummyApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IHttpActionResult> Get() {
+        public async Task<IActionResult> Get(int? id) {
+            return await ((id == null) ? GetEmployees() : GetEmployee(id));
+        }
+
+    
+        private async Task<IActionResult> GetEmployees() {
 
             try
             {
@@ -31,17 +37,17 @@ namespace DummyApi.Controllers
             return Ok("Invalid Response");
         }
 
-        [HttpGet]
-        public async Task<IHttpActionResult> Get(int? id) {
+      
+        private async Task<IActionResult> GetEmployee(int? id) {
             try
             {
-                if (id != null) {
+   
                     var employee = await _dummyServic.GetEmployee(id).ConfigureAwait(false);
                     if (employee != null)
                     {
                         return Ok(employee);
                     }
-                }
+
             }
             catch (System.Exception ex)
             {

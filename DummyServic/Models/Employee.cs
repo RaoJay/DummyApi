@@ -1,4 +1,4 @@
-﻿namespace DummyApi.Models
+﻿namespace DummyServic.Models
 {
     public class Employee
     {

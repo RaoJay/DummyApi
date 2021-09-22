@@ -1,6 +1,5 @@
-﻿using DummyApi.Models;
+﻿using DummyServic.Models;
 using System.Collections.Generic;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace DummyServic

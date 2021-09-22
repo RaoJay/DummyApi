@@ -1,4 +1,5 @@
-﻿using DummyApi.Models;
+﻿
+using DummyServic.Models;
 using System.Collections.Generic;
 
 namespace DummyServic

@@ -1,4 +1,4 @@
-﻿using DummyApi.Models;
+﻿using DummyServic.Models;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;

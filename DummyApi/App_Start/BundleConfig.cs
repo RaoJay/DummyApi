@@ -1,6 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
-
+﻿
 namespace DummyApi
 {
     public class BundleConfig
